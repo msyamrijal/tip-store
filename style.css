@@ -1,0 +1,153 @@
+/* Reset dan Pengaturan Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Latar belakang gelap */
+    color: #e0e0e0; /* Teks terang */
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header dan Navigasi */
+header {
+    background-color: #1f1f1f;
+    padding: 1rem 0;
+    border-bottom: 2px solid #007bff; /* Aksen biru */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #007bff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Bagian Hero */
+.hero {
+    background: #1f1f1f;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Grid Produk */
+.product-grid {
+    padding: 3rem 0;
+}
+
+.product-grid h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.product-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    height: 45px; /* Memberi tinggi tetap agar rapi */
+    overflow: hidden;
+}
+
+.product-card .price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #00aaff;
+    margin-bottom: 1rem;
+}
+
+.buy-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #333;
+}
