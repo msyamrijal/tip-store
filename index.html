@@ -4,80 +4,407 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Store - Toko Elektronik Online Terpercaya</title>
+    <meta name="description" content="Toko online terpercaya untuk kebutuhan elektronik dan gaming Anda. Dapatkan produk berkualitas dengan harga terbaik.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- Header dengan Navigasi -->
     <header>
         <div class="container">
             <h1 class="logo">Tip Store</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Beranda</a></li>
-                    <li><a href="#">Produk</a></li>
-                    <li><a href="#">Tentang Kami</a></li>
-                    <li><a href="#">Kontak</a></li>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                    <li><a href="#keranjang" class="keranjang-link"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
+        <!-- Hero Section -->
+        <section id="beranda" class="hero">
             <div class="container">
                 <h2>Selamat Datang di Tip Store</h2>
-                <p>Solusi kebutuhan elektronik dan gaming Anda.</p>
+                <p>Solusi kebutuhan elektronik dan gaming Anda dengan produk terbaik dan harga terjangkau.</p>
+                <a href="#produk" class="cta-button">Jelajahi Sekarang</a>
             </div>
         </section>
 
-        <section class="product-grid">
+        <!-- Fitur Unggulan -->
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
+                        <h3>Pengiriman Cepat</h3>
+                        <p>Nikmati pengiriman produk dalam 24 jam</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Garansi Resmi</h3>
+                        <p>Produk asli dengan garansi penuh</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                        <h3>Layanan 24/7</h3>
+                        <p>Tim siap membantu Anda kapan saja</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Produk Unggulan -->
+        <section id="produk" class="product-grid">
             <div class="container">
                 <h3>Produk Unggulan</h3>
                 <div class="products">
                     <!-- Contoh Produk 1 -->
                     <div class="product-card">
+                        <span class="discount-badge">-15%</span>
                         <img src="https://images.tokopedia.net/img/cache/300-square/VqbcmM/2024/4/29/e524b898-904b-488b-9602-094358897587.jpg" alt="Logitech G102">
-                        <h4>Logitech G102 Lightsync Gaming Mouse</h4>
-                        <p class="price">Rp 289.000</p>
-                        <button class="buy-button">Beli Sekarang</button>
+                        <div class="product-info">
+                            <h4>Logitech G102 Lightsync Gaming Mouse</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(128)</span>
+                            </div>
+                            <p class="price">Rp 289.000 <span class="original-price">Rp 340.000</span></p>
+                            <button class="buy-button" data-id="1" data-name="Logitech G102 Lightsync Gaming Mouse" data-price="289000">Beli Sekarang</button>
+                        </div>
                     </div>
 
                     <!-- Contoh Produk 2 -->
                     <div class="product-card">
+                        <span class="discount-badge">-10%</span>
                         <img src="https://images.tokopedia.net/img/cache/300-square/VqbcmM/2022/1/18/88f831e3-1f20-424a-874b-513426214041.jpg" alt="Rexus Daxa M71 Pro">
-                        <h4>REXUS Daxa M71 Pro Keyboard Gaming</h4>
-                        <p class="price">Rp 629.000</p>
-                        <button class="buy-button">Beli Sekarang</button>
+                        <div class="product-info">
+                            <h4>REXUS Daxa M71 Pro Keyboard Gaming</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(92)</span>
+                            </div>
+                            <p class="price">Rp 629.000 <span class="original-price">Rp 699.000</span></p>
+                            <button class="buy-button" data-id="2" data-name="REXUS Daxa M71 Pro Keyboard Gaming" data-price="629000">Beli Sekarang</button>
+                        </div>
                     </div>
 
                     <!-- Contoh Produk 3 -->
                     <div class="product-card">
+                        <span class="discount-badge">-20%</span>
                         <img src="https://images.tokopedia.net/img/cache/300-square/VqbcmM/2021/12/21/53177145-10b2-48a0-9856-787140884021.jpg" alt="Fantech Maxfit61">
-                        <h4>FANTECH MAXFIT61 FROST MK857 Keyboard</h4>
-                        <p class="price">Rp 499.000</p>
-                        <button class="buy-button">Beli Sekarang</button>
+                        <div class="product-info">
+                            <h4>FANTECH MAXFIT61 FROST MK857 Keyboard</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(156)</span>
+                            </div>
+                            <p class="price">Rp 499.000 <span class="original-price">Rp 625.000</span></p>
+                            <button class="buy-button" data-id="3" data-name="FANTECH MAXFIT61 FROST MK857 Keyboard" data-price="499000">Beli Sekarang</button>
+                        </div>
                     </div>
 
                     <!-- Contoh Produk 4 -->
                     <div class="product-card">
                         <img src="https://images.tokopedia.net/img/cache/300-square/VqbcmM/2023/10/2/8a33557a-976c-482a-8c01-83957245781a.jpg" alt="LG Monitor">
-                        <h4>LG 24MP400-B 24" IPS Monitor</h4>
-                        <p class="price">Rp 1.399.000</p>
-                        <button class="buy-button">Beli Sekarang</button>
+                        <div class="product-info">
+                            <h4>LG 24MP400-B 24" IPS Monitor</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(67)</span>
+                            </div>
+                            <p class="price">Rp 1.399.000</p>
+                            <button class="buy-button" data-id="4" data-name="LG 24MP400-B 24" IPS Monitor" data-price="1399000">Beli Sekarang</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Tentang Kami -->
+        <section id="tentang" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Tentang Kami">
+                    </div>
+                    <div class="about-text">
+                        <h3>Tentang Tip Store</h3>
+                        <p>Tip Store adalah toko online yang berfokus pada menyediakan produk elektronik dan gaming berkualitas tinggi dengan harga terjangkau. Kami percaya bahwa setiap pengguna layar pantang berkompromi dengan performa.</p>
+                        <p>Dengan pengalaman lebih dari 10 tahun di industri elektronik, kami memastikan setiap produk yang kami jual adalah produk asli dengan kualitas terbaik.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h4>10+</h4>
+                                <p>Tahun Pengalaman</p>
+                            </div>
+                            <div class="stat">
+                                <h4>50K+</h4>
+                                <p>Pelanggan Puas</p>
+                            </div>
+                            <div class="stat">
+                                <h4>500+</h4>
+                                <p>Produk Tersedia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="container">
+                <h3>Dapatkan Penawaran Terbaik</h3>
+                <p>Daftar newsletter kami dan dapatkan diskon 10% untuk pembelian pertama Anda</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Anda" required>
+                    <button type="submit">Daftar Sekarang</button>
+                </form>
+            </div>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Tip Store. All Rights Reserved.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tentang Tip Store</h3>
+                    <p>Tip Store adalah toko online terpercaya untuk kebutuhan elektronik dan gaming Anda. Kami menyediakan produk-produk berkualitas dengan harga terjangkau.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Link Cepat</h3>
+                    <ul>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#produk">Produk</a></li>
+                        <li><a href="#tentang">Tentang Kami</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kategori</h3>
+                    <ul>
+                        <li><a href="#">Mouse Gaming</a></li>
+                        <li><a href="#">Keyboard Gaming</a></li>
+                        <li><a href="#">Headset</a></li>
+                        <li><a href="#">Monitor</a></li>
+                        <li><a href="#">Laptop</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Hubungi Kami</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Teknologi No. 123, Jakarta</li>
+                        <li><i class="fas fa-phone"></i> (021) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@tipstore.com</li>
+                        <li><i class="fas fa-clock"></i> Senin - Jumat: 09:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tip Store. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Keranjang Belanja</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="cart-items">
+                <p class="empty-cart">Keranjang belanja Anda kosong</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total: </span>
+                    <span class="total-price">Rp 0</span>
+                </div>
+                <button class="checkout-button">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Toggle keranjang belanja
+        document.querySelector('.keranjang-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('cart-modal').style.display = 'block';
+        });
+
+        // Tutup modal keranjang
+        document.querySelector('.close-modal').addEventListener('click', function() {
+            document.getElementById('cart-modal').style.display = 'none';
+        });
+
+        // Tambahkan produk ke keranjang
+        document.querySelectorAll('.buy-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const productId = this.getAttribute('data-id');
+                const productName = this.getAttribute('data-name');
+                const productPrice = this.getAttribute('data-price');
+                
+                // Simpan ke localStorage
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                
+                // Cek produk sudah ada di keranjang
+                const existingProduct = cart.find(item => item.id === productId);
+                
+                if (existingProduct) {
+                    existingProduct.quantity += 1;
+                } else {
+                    cart.push({
+                        id: productId,
+                        name: productName,
+                        price: productPrice,
+                        quantity: 1
+                    });
+                }
+                
+                localStorage.setItem('cart', JSON.stringify(cart));
+                updateCartCount();
+                
+                // Tampilkan notifikasi
+                showNotification('Produk berhasil ditambahkan ke keranjang!');
+            });
+        });
+
+        // Update jumlah item di keranjang
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.querySelector('.cart-count').textContent = totalItems;
+        }
+
+        // Tampilkan notifikasi
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.classList.add('show');
+            }, 10);
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+
+        // Tampilkan item keranjang di modal
+        function displayCartItems() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartItemsContainer = document.querySelector('.cart-items');
+            
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = '<p class="empty-cart">Keranjang belanja Anda kosong</p>';
+                document.querySelector('.total-price').textContent = 'Rp 0';
+                return;
+            }
+            
+            let cartHTML = '';
+            let totalPrice = 0;
+            
+            cart.forEach(item => {
+                const itemPrice = parseInt(item.price);
+                const itemTotal = itemPrice * item.quantity;
+                totalPrice += itemTotal;
+                
+                cartHTML += `
+                    <div class="cart-item">
+                        <div class="cart-item-info">
+                            <h4>${item.name}</h4>
+                            <p>Rp ${itemPrice.toLocaleString('id-ID')} × ${item.quantity}</p>
+                        </div>
+                        <div class="cart-item-price">Rp ${itemTotal.toLocaleString('id-ID')}</div>
+                        <button class="remove-item" data-id="${item.id}"><i class="fas fa-trash"></i></button>
+                    </div>
+                `;
+            });
+            
+            cartItemsContainer.innerHTML = cartHTML;
+            document.querySelector('.total-price').textContent = `Rp ${totalPrice.toLocaleString('id-ID')}`;
+            
+            // Tambahkan event listener untuk tombol hapus item
+            document.querySelectorAll('.remove-item').forEach(button => {
+                button.addEventListener('click', function() {
+                    const itemId = this.getAttribute('data-id');
+                    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                    cart = cart.filter(item => item.id !== itemId);
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    displayCartItems();
+                    updateCartCount();
+                });
+            });
+        }
+
+        // Tampilkan item keranjang saat modal dibuka
+        document.querySelector('.keranjang-link').addEventListener('click', function() {
+            displayCartItems();
+        });
+
+        // Smooth scrolling untuk navigasi
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Newsletter form
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            showNotification(`Terima kasih! Email ${email} telah terdaftar.`);
+            this.reset();
+        });
+
+        // Update cart count saat halaman dimuat
+        updateCartCount();
+    </script>
 </body>
 </html>
